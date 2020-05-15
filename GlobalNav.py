@@ -58,7 +58,7 @@ if __name__ == "__main__":
     targetUrls = set()
     startUrl = f"https://{domainName}{applicationPath}/ping/btwd"
     driverOptions = Options()
-    driverOptions.headless = False
+    driverOptions.headless = True
     driver = webdriver.Firefox(options=driverOptions)
     try:
         driver.maximize_window()
